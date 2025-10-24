@@ -1,0 +1,282 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+html {
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #0c0c0c;
+}
+body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* background: url(../images/basicBg.jpg) no-repeat; */
+    background-color: #0c0c0c;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+/* 스크롤 없애기 */
+body::-webkit-scrollbar {
+  display: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* 전체 폰트 */
+@font-face {
+    font-family: 'PyeojinGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* page1 */
+#page1 {
+    background: url(../images/backgrond.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #f9f9f9;
+}
+.top-text {
+    position: absolute;
+    left: 10%;
+    top: 6%;
+    width: 80%;
+    text-align: center;
+
+    overflow: hidden;
+}
+.top-text > b:nth-child(1) {
+    float: left;
+}
+.top-text > b:nth-child(3) {
+    float: right;
+}
+#page1 > p {
+    position: relative;
+    top: 40%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: normal;
+
+    animation: fadein 10s ease 3s;
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#page1 > p > b {
+    font-weight: 500;
+}
+.top-text::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* page2 */
+#page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+    color: #f9f9f9;
+
+    background-image: url(../images/page2-bottom-background.png);
+    /* background-image: url(../images/page2-background2.png); */
+    /* background-image: url(../images/page2-background23.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: relative;
+}
+#page2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.bottom-img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.page2_topText {
+    position: relative;
+    left: 10%;
+    top: 6%;
+    width: 80%;
+
+    text-align: center;
+    display: block;
+}
+.page2_topText > b:nth-child(1) {
+    float: left;
+}
+.page2_topText > b:nth-child(2) {
+    float: right;
+}
+.page2_topText::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#profile-mainText {
+    position: relative;
+    top: 15%;
+    width: 80%;
+
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+#profile-mainText > p {
+    display: block;
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+#page2 > p {
+    display: block;
+    width: 40%;
+    padding: 10% 0% 0 10%;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 200;
+    float: left;
+}
+#page2 > p::first-line {
+    line-height: 80px;
+}
+#profile {
+    float: right;
+    width: 40%;
+    padding: 11% 10% 0 0;
+}
+#profile > p {
+    float: left;
+    font-size: 20px;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: normal;
+    width: 70%;
+}
+#profile > p::first-line {
+    font-weight: 400;
+}
+#profile > img {
+    width: 45px;
+    float: right;
+}
+#profile > img:nth-child(2) {
+    padding-left: 10px;
+}
+#profile > p:nth-child(4) {
+    padding-top: 30px;
+}
+#profile::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.skill {
+    float: left;
+    padding-top: 30px;
+}
+.skill > img {
+    width: 40px;
+    float: left;
+    padding: 10px;
+}
+.skill > img:nth-child(1) {
+    padding: 5px 0 0;
+    width: 52px;
+}
+.skill > img:nth-child(2) {
+    padding: 5px 0 0 4px;
+    width: 52px;
+}
+
+/* page3 */
+#page3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+    color: #f9f9f9;
+    position: relative;
+}
+#content-box {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding-bottom: 100px;
+}
+#content-box > h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+#content-box > hr {
+    margin-top: 25px;
+}
+.contents-text {
+    font-size: 30px;
+    font-weight: 300;
+}
+.contents-text > li {
+    float: left;
+    padding-top: 20px;
+}
+.contents-text > li:nth-child(1) {
+    line-height: 60px;
+    padding-left: 10px;
+    width: 40px;
+    font-weight: 400;
+}
+.contents-text > li:nth-child(2) {
+    padding-left: 20%;
+    font-size: 20px;
+}
+.contents-text > li:nth-child(2)::first-line {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+.contents-text > li:nth-child(3) {
+    float: right;
+    padding-right: 10px;
+}
+.contents-text > li > a > img {
+    display: block;
+    width: 60px;
+}
+.contents-text::after{
+    content: "";
+    display: block;
+    clear: both;
+}

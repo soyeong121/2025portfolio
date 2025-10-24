@@ -1,0 +1,101 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+html {
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #0c0c0c;
+}
+body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* background: url(../images/basicBg.jpg) no-repeat; */
+    background-color: #0c0c0c;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+/* 스크롤 없애기 */
+body::-webkit-scrollbar {
+  display: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* 전체 폰트 */
+@font-face {
+    font-family: 'PyeojinGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* page1 */
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+    color: #f9f9f9;
+    position: relative;
+}
+#content-box {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding-bottom: 100px;
+}
+#content-box > h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+#content-box > hr {
+    margin-top: 25px;
+}
+.contents-text {
+    font-size: 30px;
+    font-weight: 300;
+}
+.contents-text > li {
+    float: left;
+    padding-top: 20px;
+}
+.contents-text > li:nth-child(1) {
+    line-height: 60px;
+    padding-left: 10px;
+    width: 40px;
+    font-weight: 400;
+}
+.contents-text > li:nth-child(2) {
+    padding-left: 20%;
+    font-size: 20px;
+}
+.contents-text > li:nth-child(2)::first-line {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+.contents-text > li:nth-child(3) {
+    float: right;
+    padding-right: 10px;
+}
+.contents-text > li > a > img {
+    display: block;
+    width: 60px;
+}
+.contents-text::after{
+    content: "";
+    display: block;
+    clear: both;
+}
