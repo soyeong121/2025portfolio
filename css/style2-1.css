@@ -105,6 +105,99 @@ button {
     position: relative;
 }
 #page2 > img {
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+/* part2 */
+/* page3 */
+#page3 {
     width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* #page3::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+#page4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page4 > img {
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+/* part3 */
+/* page5 */
+#page5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page5::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#page6 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page6 > img {
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+/* part4 */
+/* page7 */
+#page7 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page7::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#page8 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page8 > img {
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+/* part5 */
+/* page9 */
+#page9 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page9::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#page10 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page10 > img {
+    height: 100%;
+    right: 0;
     position: absolute;
 }
